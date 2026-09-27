@@ -103,7 +103,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/register",
+        "https://scenepass.onrender.com/api/register",
         {
           name: name.trim(),
           email: email.trim().toLowerCase(),
@@ -183,7 +183,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/login",
+        "https://scenepass.onrender.com/api/login",
         {
           email: email.trim().toLowerCase(),
           password: password,
