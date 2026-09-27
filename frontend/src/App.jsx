@@ -311,7 +311,7 @@ function App() {
 
       <div className="login-card">
 
-        /* BRAND */
+        {/* BRAND */}
 
         <div className="brand">
 
@@ -331,23 +331,21 @@ function App() {
 
         </div>
 
-        /* MESSAGE */
+        {/* MESSAGE */} 
 
         {message && (
-          <div
-            className={`form-message ${messageType}`}
-          >
+          <div className={`form-message ${messageType}`}>
             {message}
           </div>
         )}
 
-        /*LOGIN*/
+        {/*LOGIN*/}
 
         {page === "login" && (
 
           <form onSubmit={login}>
 
-            /* EMAIL */
+            {/* EMAIL */}
 
             <div className="input-group">
 
@@ -365,7 +363,7 @@ function App() {
 
             </div>
 
-            /* PASSWORD */
+            {/* PASSWORD */}
 
             <div className="input-group">
 
@@ -385,7 +383,7 @@ function App() {
 
               </div>
 
-              /* PASSWORD STRENGTH */
+              {/* PASSWORD STRENGTH */}
 
               {password && (
                 <div className="strength-area">
@@ -405,7 +403,7 @@ function App() {
 
             </div>
 
-            /* LOGIN BUTTON */
+            {/* LOGIN BUTTON */}
 
             <button type="submit" className="login-btn" disabled={loading}>
 
@@ -413,7 +411,7 @@ function App() {
 
             </button>
 
-            /* REGISTER LINK */
+            {/* REGISTER LINK */}
 
             <p className="switch-text">
 
@@ -429,13 +427,13 @@ function App() {
 
         )}
 
-        /*REGISTER*/
+        {/*REGISTER*/}
 
         {page === "register" && (
 
           <form onSubmit={register}>
 
-            /* NAME */
+            {/* NAME */}
 
             <div className="input-group">
 
@@ -453,7 +451,7 @@ function App() {
 
             </div>
 
-            /* EMAIL */
+            {/* EMAIL */}
 
             <div className="input-group">
 
@@ -471,7 +469,7 @@ function App() {
 
             </div>
 
-            /* PASSWORD */
+            {/* PASSWORD */}
 
             <div className="input-group">
 
@@ -490,7 +488,7 @@ function App() {
 
               </div>
 
-              /* PASSWORD STRENGTH */
+              {/* PASSWORD STRENGTH */}
 
               {password && (
                 <div className="strength-area">
@@ -510,7 +508,7 @@ function App() {
 
             </div>
 
-            /* REGISTER BUTTON */
+            {/* REGISTER BUTTON */}
 
             <button type="submit" className="login-btn" disabled={loading}>
 
@@ -518,7 +516,7 @@ function App() {
 
             </button>
 
-            /* LOGIN LINK */
+            {/* LOGIN LINK */}
 
             <p className="switch-text">
 
@@ -534,7 +532,7 @@ function App() {
 
         )}
 
-        /* FOOTER */
+        {/* FOOTER */}
 
         <div className="secure-note">
 
